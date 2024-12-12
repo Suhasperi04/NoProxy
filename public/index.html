@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Use Firebase CDN for compatibility with script tags -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+
+    <div class="container">
+        <h1>Register New User</h1>
+        <form id="registrationForm">
+            <label for="id">ID:</label>
+            <input type="text" id="id" name="id" required>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <button type="submit">Register</button>
+        </form>
+        <h2>User Log</h2>
+        <label for="logDate">Select Date:</label>
+        <input type="date" id="logDate" value="" />
+
+        <div id="userLog"></div>
+    </div>
+    <!-- Your custom JavaScript -->
+    <script src="js/scripts.js"></script>
+</body>
+</html>
